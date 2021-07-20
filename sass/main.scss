@@ -2,6 +2,10 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$color-text-dark: #777777;
+$color-white: #ffffff;
+$color-black: #000000;
+
 *,
 *::before,
 *::after {
@@ -19,7 +23,7 @@ body {
   font-weight: 400;
   /*font-size: 16px*/
   line-height: 1.7;
-  color: #777777;
+  color: $color-text-dark;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -61,7 +65,7 @@ body {
 }
 
 .heading-primary {
-  color: #ffffff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -189,7 +193,7 @@ body {
   -moz-transform: translateY(-0.3rem);
   -ms-transform: translateY(-0.3rem);
   -o-transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 }
 
 .btn:active {
@@ -198,7 +202,7 @@ body {
   -moz-transform: translateY(-0.1rem);
   -ms-transform: translateY(-0.1rem);
   -o-transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 }
 
 .btn::after {
@@ -232,12 +236,12 @@ body {
 }
 
 .btn--white {
-  background-color: #ffffff;
-  color: #777777;
+  background-color: $color-white;
+  color: $color-text-dark;
 }
 
 .btn--white::after {
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 .btn--animated {
