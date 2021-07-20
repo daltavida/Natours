@@ -40,28 +40,28 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
-}
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo {
-  height: 3.5rem;
-}
+  &__logo {
+    height: 3.5rem;
+  }
 
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  text-align: center;
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -70,25 +70,25 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem;
   -webkit-backface-visibility: hidden;
-}
 
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
 
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.75rem;
-  animation: moveInRight 1s ease-out;
-  -webkit-animation: moveInRight 1s ease-out;
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out;
+    -webkit-animation: moveInRight 1s ease-out;
+  }
 }
 
 @keyframes moveInLeft {
@@ -167,85 +167,87 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  -webkit-border-radius: 10rem;
-  -moz-border-radius: 10rem;
-  -ms-border-radius: 10rem;
-  -o-border-radius: 10rem;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  position: relative;
-  font-size: 1.6rem;
-}
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+  }
 
-.btn:hover {
-  transform: translateY(-0.3rem);
-  -webkit-transform: translateY(-0.3rem);
-  -moz-transform: translateY(-0.3rem);
-  -ms-transform: translateY(-0.3rem);
-  -o-transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-}
+  &:hover {
+    transform: translateY(-0.3rem);
+    -webkit-transform: translateY(-0.3rem);
+    -moz-transform: translateY(-0.3rem);
+    -ms-transform: translateY(-0.3rem);
+    -o-transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
-.btn:active {
-  transform: translateY(-0.1rem);
-  -webkit-transform: translateY(-0.1rem);
-  -moz-transform: translateY(-0.1rem);
-  -ms-transform: translateY(-0.1rem);
-  -o-transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-}
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      -webkit-transform: scaleX(1.4) scaleY(1.6);
+      -moz-transform: scaleX(1.4) scaleY(1.6);
+      -ms-transform: scaleX(1.4) scaleY(1.6);
+      -o-transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  -webkit-border-radius: 10rem;
-  -moz-border-radius: 10rem;
-  -ms-border-radius: 10rem;
-  -o-border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-}
+  &:active {
+    transform: translateY(-0.1rem);
+    -webkit-transform: translateY(-0.1rem);
+    -moz-transform: translateY(-0.1rem);
+    -ms-transform: translateY(-0.1rem);
+    -o-transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
 
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-  -moz-transform: scaleX(1.4) scaleY(1.6);
-  -ms-transform: scaleX(1.4) scaleY(1.6);
-  -o-transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
 
-.btn--white {
-  background-color: $color-white;
-  color: $color-text-dark;
-}
+  &--white {
+    background-color: $color-white;
+    color: $color-text-dark;
 
-.btn--white::after {
-  background-color: $color-white;
-}
+    &::after {
+      background-color: $color-white;
+    }
+  }
 
-.btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
