@@ -52,11 +52,11 @@ body {
 
   &:hover {
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-    -moz-transform: skewY(2deg) skewX(15deg) scale(1.1);
-    -ms-transform: skewY(2deg) skewX(15deg) scale(1.1);
-    -o-transform: skewY(2deg) skewX(15deg) scale(1.1);
+    transform: skewY(-2deg) skewX(15deg) scale(1.1);
+    -webkit-transform: skewY(-2deg) skewX(15deg) scale(1.1);
+    -moz-transform: skewY(-2deg) skewX(15deg) scale(1.1);
+    -ms-transform: skewY(-2deg) skewX(15deg) scale(1.1);
+    -o-transform: skewY(-2deg) skewX(15deg) scale(1.1);
   }
 }
 
