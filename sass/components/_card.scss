@@ -13,6 +13,7 @@
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    overflow: hidden;
 
     &--front {
       background-color: $color-white;
@@ -58,17 +59,34 @@
   &__picture {
     background-size: cover;
     height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &-1 {
-      background-image: url(../img/nat-5.jpg);
+      background-image: linear-gradient(
+          to bottom right,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        url(../img/nat-5.jpg);
     }
 
     &-2 {
-      background-image: url(../img/nat-6.jpg);
+      background-image: linear-gradient(
+          to bottom right,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../img/nat-6.jpg);
     }
 
     &-3 {
-      background-image: url(../img/nat-7.jpg);
+      background-image: linear-gradient(
+          to bottom right,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../img/nat-7.jpg);
     }
   }
 }
