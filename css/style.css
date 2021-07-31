@@ -296,7 +296,9 @@ body {
     right: 2rem;
     width: 75%; }
   .card__heading--span {
-    padding: 1rem 1.5rem; }
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; }
     .card__heading--span-1 {
       background-image: linear-gradient(to bottom right, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading--span-2 {
