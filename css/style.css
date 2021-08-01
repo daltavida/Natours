@@ -317,6 +317,23 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eeeeee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+    .card__cta--price-box {
+      text-align: center;
+      margin-bottom: 8rem;
+      color: #ffffff; }
+    .card__cta--price-only {
+      font-size: 1.4rem;
+      text-transform: uppercase; }
+    .card__cta--price-value {
+      font-size: 6rem;
+      font-weight: 300; }
 
 .composition {
   position: relative; }
