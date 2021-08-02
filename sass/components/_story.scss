@@ -5,14 +5,15 @@
   background-color: $color-white;
   border-radius: 3px;
   padding: 6rem;
+  padding-left: 9rem;
   font-size: $font-default;
 
   &__shape {
     width: 15rem;
     height: 15rem;
     float: left;
-    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    background-color: orangered;
+    transform: translateX(-3rem);
   }
 }
