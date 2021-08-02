@@ -1,0 +1,18 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: $color-white;
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: $font-default;
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle(50% at 50% 50%);
+    background-color: orangered;
+  }
+}
