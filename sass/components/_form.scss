@@ -59,14 +59,14 @@
   }
 
   &__radio-button {
-    height: 3rem;
-    width: 3rem;
+    height: 2.8rem;
+    width: 2.8rem;
     border: 5px solid $color-primary;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
     left: 0;
-    top: 0rem;
+    top: -0.5rem;
 
     &::after {
       content: "";
@@ -79,6 +79,15 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      opacity: 0;
     }
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
   }
 }

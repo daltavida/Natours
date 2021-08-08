@@ -473,14 +473,14 @@ body {
   padding-left: 4.5rem; }
 
 .form__radio-button {
-  height: 3rem;
-  width: 3rem;
+  height: 2.8rem;
+  width: 2.8rem;
   border: 5px solid #55c57a;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 0rem; }
+  top: -0.5rem; }
   .form__radio-button::after {
     content: "";
     display: block;
@@ -491,7 +491,14 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    opacity: 0; }
+
+.form__radio-input {
+  display: none; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
 
 .story {
   width: 75%;
