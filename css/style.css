@@ -550,7 +550,8 @@ body {
 .footer {
   background-color: #333333;
   padding: 10rem 0;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  color: #f7f7f7; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -563,11 +564,22 @@ body {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
+  .footer__copyright {
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
+  .footer__navigation {
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2rem;
+    display: inline-block; }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
+    background-color: #333333;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block; }
+    display: inline-block;
+    transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);

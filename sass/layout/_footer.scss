@@ -2,6 +2,7 @@
   background-color: $color-grey-4;
   padding: 10rem 0;
   font-size: 1.4rem;
+  color: $color-grey-1;
 
   &__logo-box {
     text-align: center;
@@ -24,13 +25,28 @@
     }
   }
 
+  &__copyright {
+    border-top: 1px solid $color-grey-1;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
+  }
+
+  &__navigation {
+    border-top: 1px solid $color-grey-1;
+    padding-top: 2rem;
+    display: inline-block;
+  }
+
   &__link {
     &:link,
     &:visited {
       color: $color-grey-1;
+      background-color: $color-grey-4;
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
+      transition: all 0.2s;
     }
 
     &:hover,
