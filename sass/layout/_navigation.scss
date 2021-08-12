@@ -9,6 +9,7 @@
     width: 7rem;
     position: fixed;
     top: 6rem;
+    cursor: pointer;
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
@@ -116,14 +117,23 @@
       content: "";
       position: absolute;
       left: 0;
+      transition: all 0.2s;
     }
 
     &::before {
-      top: -1rem;
+      top: -0.8rem;
     }
 
     &::after {
-      top: 1rem;
+      top: 0.8rem;
     }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
   }
 }
