@@ -12,16 +12,21 @@
     background-color: $color-white;
     width: 75%;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+    display: table;
   }
 
   &__left {
     width: 33.333333%;
-    float: left;
+    display: table-cell;
   }
 
   &__right {
     width: 66.666667%;
-    float: left;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
   }
 
   &__img {
@@ -30,5 +35,7 @@
   }
 
   &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
   }
 }

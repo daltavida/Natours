@@ -518,16 +518,24 @@ body {
     transform: translate(-50%, -50%);
     background-color: #ffffff;
     width: 75%;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+    display: table; }
   .popup__left {
     width: 33.333333%;
-    float: left; }
+    display: table-cell; }
   .popup__right {
     width: 66.666667%;
-    float: left; }
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
   .popup__img {
     display: block;
     width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem; }
 
 .story {
   width: 75%;
