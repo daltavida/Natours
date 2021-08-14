@@ -517,6 +517,9 @@ body {
   .popup:target {
     visibility: visible;
     opacity: 1; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -527,7 +530,10 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     overflow: hidden;
-    display: table; }
+    display: table;
+    opacity: 0;
+    transition: all 0.5s 0.2s;
+    transform: translate(-50%, -50%) scale(0.5); }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
@@ -554,7 +560,8 @@ body {
     font-size: 3rem;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    line-height: 1; }
   .popup__close:hover {
     color: #55c57a; }
 
