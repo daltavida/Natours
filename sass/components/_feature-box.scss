@@ -15,11 +15,19 @@
   -ms-transition: transform 0.3s;
   -o-transition: transform 0.3s;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
     color: $color-primary;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
