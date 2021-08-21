@@ -10,14 +10,11 @@
   visibility: hidden;
   transition: all 0.3s;
 
-  &:target {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  &:target &__content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, 0.3);
   }
 
   &__content {
